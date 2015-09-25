@@ -25,7 +25,7 @@ import java.util.Random;
 public class MainActivity extends ListActivity {
 
     // TODO: change this to your own Wilddog URL
-    private static final String WILDDOG_URL = "android-chat.wilddogio.com";
+    private static final String WILDDOG_URL = "https://android-chat.wilddogio.com";
 
     private String mUsername;
     private Wilddog mWilddogRef;
