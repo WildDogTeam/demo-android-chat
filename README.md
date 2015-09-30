@@ -3,12 +3,15 @@
  A simple chat application that built with Wilddog on Android.
 
 ## 本地运行
-首先确认本机已经安装 [Android](http://developer.android.com/index.html) 运行环境，然后执行下列指令：
+首先确认本机已经安装 [Android](http://developer.android.com/index.html)运行环境和 Andriod Studio 开发环境 ，然后执行下列指令：
 
 ```
 git clone git@github.com:WildDogTeam/demo-android-chat.git
 cd  demo-android-chat
 ```
+
+替换 Wilddog appId
+Update [MainActivity](/app/src/main/java/com/wilddog/androidchat/MainActivity.java) and replace https://android-chat.wilddogio.com with a reference to your Wilddog.
 
 ## 支持
 如果在使用过程中有任何问题，请提 [issue](https://github.com/WildDogTeam/demo-android-chat/issues) ，我会在 Github 上给予帮助。
