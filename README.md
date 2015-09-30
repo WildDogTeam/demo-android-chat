@@ -10,7 +10,7 @@ git clone git@github.com:WildDogTeam/demo-android-chat.git
 cd  demo-android-chat
 ```
 
-替换 Wilddog appId
+替换 Wilddog appId:
 
 Update [MainActivity](/app/src/main/java/com/wilddog/androidchat/MainActivity.java) and replace https://android-chat.wilddogio.com with a reference to your Wilddog.
 
