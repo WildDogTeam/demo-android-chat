@@ -17,8 +17,8 @@ cd  demo-android-chat
 
 * [Wilddog 概览](https://z.wilddog.com/overview/guide)
 * [Android SDK快速入门](https://z.wilddog.com/android/quickstart)
-* [Android SDK 开发向导](https://z.wilddog.com/Android/guide/1)
-* [Android SDK API](https://z.wilddog.com/Android/api)
+* [Android SDK 开发向导](https://z.wilddog.com/android/guide/1)
+* [Android SDK API](https://z.wilddog.com/android/api)
 * [下载页面](https://www.wilddog.com/download/)
 * [Wilddog FAQ](https://z.wilddog.com/faq/qa)
 * [Android Download](http://developer.android.com/sdk/index.html)
