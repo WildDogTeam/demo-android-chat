@@ -14,7 +14,12 @@ cd  demo-android-chat
 
 Update [MainActivity](/app/src/main/java/com/wilddog/androidchat/MainActivity.java) and replace https://android-chat.wilddogio.com with a reference to your Wilddog.
 
+## 更多示例
+
+这里分类汇总了 WildDog平台上的示例程序和开源应用，　链接地址：[https://github.com/WildDogTeam/wilddog-demos](https://github.com/WildDogTeam/wilddog-demos)
+　　
 ## 支持
+
 如果在使用过程中有任何问题，请提 [issue](https://github.com/WildDogTeam/demo-android-chat/issues) ，我会在 Github 上给予帮助。
 
 ## 相关文档
