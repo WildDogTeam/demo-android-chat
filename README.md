@@ -26,10 +26,9 @@ Update [MainActivity](/app/src/main/java/com/wilddog/androidchat/MainActivity.ja
 
 * [Wilddog 概览](https://z.wilddog.com/overview/introduction)
 * [Android SDK快速入门](https://z.wilddog.com/android/quickstart)
-* [Android SDK 开发向导](https://z.wilddog.com/android/quickstart)
 * [Android SDK API](https://z.wilddog.com/android/api)
 * [下载页面](https://www.wilddog.com/download/)
-* [Wilddog FAQ](https://z.wilddog.com/faq/qa)
+* [Wilddog FAQ](https://z.wilddog.com/questions)
 * [Android Download](http://developer.android.com/sdk/index.html)
 
 ## License
