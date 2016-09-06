@@ -12,9 +12,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wilddog.client.Config;
+
 import com.wilddog.client.DataSnapshot;
-import com.wilddog.client.Logger;
 import com.wilddog.client.ValueEventListener;
 import com.wilddog.client.Wilddog;
 import com.wilddog.client.WilddogError;
@@ -25,7 +24,7 @@ import java.util.Random;
 public class MainActivity extends ListActivity {
 
     // TODO: change this to your own Wilddog URL
-    private static final String WILDDOG_URL = "https://android-chat.wilddogio.com";
+    private static final String WILDDOG_URL = "https://testinmyserver.wilddogio.com";
 
     private String mUsername;
     private Wilddog mWilddogRef;
@@ -73,7 +72,7 @@ public class MainActivity extends ListActivity {
         // Setup our view and list adapter. Ensure it scrolls to the bottom as data changes
         final ListView listView = getListView();
         // Tell our list adapter that we only want 50 messages at a time
-        mChatListAdapter = new ChatListAdapter(mWilddogRef.limit(50), this, R.layout.chat_message, mUsername);
+        mChatListAdapter = new ChatListAdapter(mWilddogRef.limitToLast(50), this, R.layout.chat_message, mUsername);
         listView.setAdapter(mChatListAdapter);
         mChatListAdapter.registerDataSetObserver(new DataSetObserver() {
             @Override
