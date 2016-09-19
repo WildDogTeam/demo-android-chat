@@ -7,10 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+
 import com.wilddog.client.ChildEventListener;
 import com.wilddog.client.DataSnapshot;
 import com.wilddog.client.Query;
-import com.wilddog.client.WilddogError;
+import com.wilddog.client.SyncError;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -132,7 +134,7 @@ public abstract class WilddogListAdapter<T> extends BaseAdapter {
             }
 
             @Override
-            public void onCancelled(WilddogError wilddogError) {
+            public void onCancelled(SyncError syncError) {
                 Log.e("WilddogListAdapter", "Listen was cancelled, no more updates will occur");
             }
 

@@ -14,20 +14,21 @@ import android.widget.Toast;
 
 
 import com.wilddog.client.DataSnapshot;
+import com.wilddog.client.SyncError;
+import com.wilddog.client.SyncReference;
 import com.wilddog.client.ValueEventListener;
-import com.wilddog.client.Wilddog;
-import com.wilddog.client.WilddogError;
+import com.wilddog.client.WilddogSync;
 import com.wilddog.newchat.R;
 
 import java.util.Random;
 
 public class MainActivity extends ListActivity {
 
-    // TODO: change this to your own Wilddog URL
-    private static final String WILDDOG_URL = "https://testinmyserver.wilddogio.com";
+
+
 
     private String mUsername;
-    private Wilddog mWilddogRef;
+    private SyncReference mWilddogRef;
     private ValueEventListener mConnectedListener;
     private ChatListAdapter mChatListAdapter;
 
@@ -42,7 +43,7 @@ public class MainActivity extends ListActivity {
         setTitle("Chatting as " + mUsername);
 
         // Setup our Wilddog mWilddogRef
-        mWilddogRef = new Wilddog(WILDDOG_URL).child("chat");
+        mWilddogRef = WilddogSync.getInstance().getReference().child("chat");
 
 
         // Setup our input methods. Enter key on the keyboard or pushing the send button
@@ -95,7 +96,7 @@ public class MainActivity extends ListActivity {
             }
 
             @Override
-            public void onCancelled(WilddogError wilddogError) {
+            public void onCancelled(SyncError wilddogError) {
                 // No-op
             }
         });

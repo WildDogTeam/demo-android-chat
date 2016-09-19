@@ -12,7 +12,7 @@ cd  demo-android-chat
 
 替换 Wilddog appId:
 
-Update [MainActivity](/app/src/main/java/com/wilddog/androidchat/MainActivity.java) and replace https://"APPID".wilddogio.com with a reference to your Wilddog.
+Update [ChatApplication](/app/src/main/java/com/wilddog/androidchat/ChatApplication.java) and replace https://testmydemo.wilddogio.com with a reference to your Wilddog.
 
 ## 更多示例
 

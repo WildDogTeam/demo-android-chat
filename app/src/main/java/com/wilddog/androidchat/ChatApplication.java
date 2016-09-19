@@ -1,6 +1,8 @@
 package com.wilddog.androidchat;
 
-import com.wilddog.client.Wilddog;
+
+import com.wilddog.wilddogcore.WilddogApp;
+import com.wilddog.wilddogcore.WilddogOptions;
 
 /**
  * @author Jeen
@@ -12,6 +14,8 @@ public class ChatApplication extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Wilddog.setAndroidContext(this);
+        // TODO: change this to your own Wilddog URL
+        WilddogOptions wilddogOptions=new WilddogOptions.Builder().setSyncUrl("https://testmydemo.wilddogio.com").build();
+        WilddogApp wilddogApp=WilddogApp.initializeApp(this,wilddogOptions);
     }
 }
