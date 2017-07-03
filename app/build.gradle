@@ -33,5 +33,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.wilddog.client:wilddog-sync-android:2.1.2'
+    compile 'com.wilddog.client:wilddog-sync-android:2.3.4'
 }
