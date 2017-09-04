@@ -14,9 +14,9 @@ public class ChatApplication extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        // TODO: change this to your own Wilddog URL
+        // TODO: change this to your own WilddogSync URL
 
-       WilddogOptions wilddogOptions=new WilddogOptions.Builder().setSyncUrl("https://testmydemo.wilddogio.com").build();
+       WilddogOptions wilddogOptions=new WilddogOptions.Builder().setSyncUrl("https://"+<Your APP ID>+".wilddogio.com").build();
         WilddogApp wilddogApp=WilddogApp.initializeApp(this,wilddogOptions);
     }
 }
